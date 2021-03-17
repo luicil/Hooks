@@ -24,7 +24,8 @@ const UseState = (props) => {
                 </div>
             </div>
             <SectionTitle title="Exercício #2" />
-            <input type="text" className="input" value={name}/>
+            <input type="text" className="input" 
+                value={name} onChange={e => setName(e.target.value)}/>
         </div>
     )
 }
